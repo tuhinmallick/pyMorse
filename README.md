@@ -24,10 +24,10 @@
     <img src="docs/images/security.svg" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">InsiderTrader</h3>
+<h3 align="center">pyMorse</h3>
 
   <p align="center">
-    InsiderTrader is a python package that helps in detecting insider trading activities in the stock market.
+    InsiderTrader is a python package that incorporating RSA into your email for added privacy.
     <br />
     <a href="https://github.com/tuhinmallick/InsiderTrader"><strong>Explore the docs »</strong></a>
     <br />
@@ -73,7 +73,14 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Insider trading refers to the practice of buying or selling securities by individuals who possess non-public information about a company. This information may include financial results, mergers and acquisitions, or other confidential information that is not yet available to the public. The individuals who engage in insider trading are typically corporate insiders, such as company executives and board members, but it can also include anyone who possesses non-public information.
+This is a Python package for implementing confidentiality techniques such as data masking and data encryption for sensitive data in your applications.
+
+The package includes the following features:
+
+Masking of sensitive data such as personal identification numbers, credit card numbers, and email addresses
+Encryption of sensitive data using industry-standard algorithms such as AES and RSA
+Support for masking and encryption of various data types including strings, integers, and dates
+Easy to use and integrate with existing applications
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,25 +113,57 @@ This is an example of how to list things you need to use the package and how to 
 
 ### Installation
 
-1. Clone the repo
-   ```bash
-   git clone https://github.com/tuhinmallick/InsiderTrader.git
-   ```
-2. Go to the project directory
-   ```bash
-   cd InsiderTrader
-   ```
-3. Install environment or dependecies
-   ```bash
-   conda env create -n ENVNAME --file docs/environment.yml
-   ```
-   or 
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Import the package in `.py`
-   ```bash
-   from insider_eda.eda_base import Exploratory_data_analysis
+<h3 align="center"><b>Installation</b></h3>
+
+```python
+pip install pyconfidentiality
+```
+
+<h3 align="center"><b>Usage</b></h3>
+
+## 1. Generate the Public and Private Keys
+
+```python
+from pyconfidentiality import generate_keypair
+
+bit_length = int(input("Enter bit length: "))
+
+public_key, private_key = generate_keypair(2**bit_length)
+```
+
+## 2. Generate Cipher Text
+
+```python
+from pyconfidentiality import encrypt_message
+plain_text = input("Enter a message: ")
+cipher_text, cipher_obj = encrypt_message(plain_text, public_key)
+print("Encrypted message: {}".format(cipher_text))
+```
+
+## 3. Send the message
+
+- Note we are intially using GMAIL for this
+- Make sure your Google Account has [Allow Less Secure App Access](https://myaccount.google.com/lesssecureapps) enabled
+- It is always recommeded to store the credentials of your GMAIL account using environment variables in your system
+
+```python
+from pyconfidentiality import send_message
+your_email = os.environ.get('EMAIL_ID') 
+your_password = os.environ.get('EMAIL_PASSWORD') 
+receiver_email = input("Enter Reciever Email") 
+subject = input("Enter subject of the Email") 
+
+send_message(your_email,your_password,reciever_email,subject,cipher_text)
+```
+
+## 4. Get back our plain text
+
+```python
+from pyconfidentiality import decrypt_message
+print("Decrypted message: {}".format(decrypt(cipher_obj, private_key)))
+```
+
+<h2 align= "center"><b> Project Maintainers</b></h2>
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
