@@ -32,8 +32,7 @@ def send_message(username, password, reciever, subject, msg, mode=1):
 
         with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
             smtp.ehlo()
-            smtp.starttls(
-            )  # Encrypt the traffic using Tranport Layer Security
+            smtp.starttls()  # Encrypt the traffic using Tranport Layer Security
             smtp.ehlo()
             smtp.login(Email_id, Email_password)  # Authentication
             smtp.send_message(msg)  # Send the message
