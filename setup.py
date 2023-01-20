@@ -25,10 +25,8 @@ setup(name=PACKAGE_NAME,
       author=AUTHOR,
       license=LICENSE,
       author_email=AUTHOR_EMAIL,
-      keywords = KEYWORDS,
+      keywords=KEYWORDS,
       url=URL,
       install_requires=INSTALL_REQUIRES,
       packages=find_packages()
       )
-
-
