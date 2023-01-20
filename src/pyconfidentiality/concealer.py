@@ -1,5 +1,7 @@
 import random
-from math import gcd, log, sqrt
+from math import gcd
+from math import log
+from math import sqrt
 from random import randint
 
 import numpy as np
