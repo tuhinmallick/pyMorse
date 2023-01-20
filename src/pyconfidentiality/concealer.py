@@ -5,9 +5,9 @@ import numpy as np
 
 
 def mod_inverse(a, m):
-    '''
+    """
     Calculate Modular Inverse
-    '''
+    """
     for x in range(1, m):
         if (a * x) % m == 1:
             return x
@@ -15,9 +15,9 @@ def mod_inverse(a, m):
 
 
 def isprime(n):
-    '''
+    """
     Check for Prime Numbers
-    '''
+    """
     if n < 2:
         return False
     elif n == 2:
@@ -30,9 +30,9 @@ def isprime(n):
 
 
 def generate_keypair(keysize):
-    '''
+    """
     Generates Public and Private Key
-    '''
+    """
     p = randint(1, 1000)
     q = randint(1, 1000)
     nMin = 1 << (keysize - 1)
@@ -48,7 +48,7 @@ def generate_keypair(keysize):
                 break
         else:
             primes.append(i)
-    while (primes and primes[0] < start):
+    while primes and primes[0] < start:
         del primes[0]
     # Select two random prime numbers p and q
     while primes:
@@ -77,18 +77,18 @@ def generate_keypair(keysize):
 
 
 def encrypt_message(plaintext, package):
-    '''
+    """
     Encrypt the message
-    '''
+    """
     e, n = package
     ciphertext = [pow(ord(c), e, n) for c in plaintext]
-    return ''.join(map(lambda x: str(x), ciphertext)), ciphertext
+    return "".join(map(lambda x: str(x), ciphertext)), ciphertext
 
 
 def decrypt_message(ciphertext, package):
-    '''
+    """
     Decrypt the message
-    '''
+    """
     d, n = package
     plaintext = [chr(pow(c, d, n)) for c in ciphertext]
-    return (''.join(plaintext))
+    return "".join(plaintext)
