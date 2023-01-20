@@ -19,23 +19,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/tuhinmallick/InsiderTrader">
+  <a href="https://github.com/tuhinmallick/pyMorse">
     <img src="docs/images/security.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">pyMorse</h3>
 
   <p align="center">
-    InsiderTrader is a python package that incorporating RSA into your email for added privacy.
+    pyMorse is a python package that incorporating RSA into your email for added privacy.
     <br />
-    <a href="https://github.com/tuhinmallick/InsiderTrader"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/tuhinmallick/pyMorse"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/tuhinmallick/InsiderTrader/blob/main/notebooks/Insider_trading_analysis.ipynb">View Demo</a>
+    <a href="https://github.com/tuhinmallick/pyMorse/blob/main/notebooks/Insider_trading_analysis.ipynb">View Demo</a>
     ·
-    <a href="https://github.com/tuhinmallick/InsiderTrader/issues">Report Bug</a>
+    <a href="https://github.com/tuhinmallick/pyMorse/issues">Report Bug</a>
     ·
-    <a href="https://github.com/tuhinmallick/InsiderTrader/issues">Request Feature</a>
+    <a href="https://github.com/tuhinmallick/pyMorse/issues">Request Feature</a>
   </p>
 </div>
 
@@ -106,7 +106,6 @@ This is an example of how to list things you need to use the package and how to 
 
 ### Installation
 
-<h3 align="center"><b>Installation</b></h3>
 
 ```python
 pip install pyconfidentiality
@@ -165,7 +164,7 @@ print("Decrypted message: {}".format(decrypt(cipher_obj, private_key)))
 
 ## Usage
 
-_For more examples, please refer to the [Notebook](https://github.com/tuhinmallick/InsiderTrader/blob/main/notebooks/Insider_trading_analysis.ipynb)_
+_For more examples, please refer to the [Notebook](https://github.com/tuhinmallick/pyMorse/blob/main/notebooks/Insider_trading_analysis.ipynb)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,12 +172,12 @@ _For more examples, please refer to the [Notebook](https://github.com/tuhinmalli
 
 ## Roadmap
 
-- [x] Granger casaulty test
-- [x] AD Fuller test
+- [x] Feature 1
+- [x]  Feature 2
 - [ ] Feature 3
   - [ ] Nested Feature
 
-See the [open issues](https://github.com/tuhinmallick/InsiderTrader/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/tuhinmallick/pyMorse/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,9 +202,9 @@ Don't forget to give the project a star! Thanks again!
 
 ## 🛡 License
 
-[![License](https://img.shields.io/github/license/tuhinmallick/InsiderTrader)](https://github.com/tuhinmallick/InsiderTrader/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/tuhinmallick/pyMorse)](https://github.com/tuhinmallick/pyMorse/blob/master/LICENSE)
 
-This project is licensed under the terms of the `MIT` license. See [LICENSE](https://github.com/tuhinmallick/InsiderTrader/blob/master/LICENSE) for more details.
+This project is licensed under the terms of the `MIT` license. See [LICENSE](https://github.com/tuhinmallick/pyMorse/blob/master/LICENSE) for more details.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,7 +218,7 @@ This project is licensed under the terms of the `MIT` license. See [LICENSE](htt
 
 Your Name - [@tuhinmallick](https://twitter.com/tuhinmallick) - tuhin.mllk@gmail.com
 
-Project Link: [https://github.com/tuhinmallick/InsiderTrader](https://github.com/tuhinmallick/InsiderTrader)
+Project Link: [https://github.com/tuhinmallick/pyMorse](https://github.com/tuhinmallick/pyMorse)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -234,15 +233,15 @@ Project Link: [https://github.com/tuhinmallick/InsiderTrader](https://github.com
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/tuhinmallick/InsiderTrader.svg?style=for-the-badge
-[contributors-url]: https://github.com/tuhinmallick/InsiderTrader/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/tuhinmallick/InsiderTrader.svg?style=for-the-badge
-[forks-url]: https://github.com/tuhinmallick/InsiderTrader/network/members
-[stars-shield]: https://img.shields.io/github/stars/tuhinmallick/InsiderTrader.svg?style=for-the-badge
-[stars-url]: https://github.com/tuhinmallick/InsiderTrader/stargazers
-[issues-shield]: https://img.shields.io/github/issues/tuhinmallick/InsiderTrader.svg?style=for-the-badge
-[issues-url]: https://github.com/tuhinmallick/InsiderTrader/issues
-[license-shield]: https://img.shields.io/github/license/tuhinmallick/InsiderTrader.svg?style=for-the-badge
-[license-url]: https://github.com/tuhinmallick/InsiderTrader/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/tuhinmallick/pyMorse.svg?style=for-the-badge
+[contributors-url]: https://github.com/tuhinmallick/pyMorse/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/tuhinmallick/pyMorse.svg?style=for-the-badge
+[forks-url]: https://github.com/tuhinmallick/pyMorse/network/members
+[stars-shield]: https://img.shields.io/github/stars/tuhinmallick/pyMorse.svg?style=for-the-badge
+[stars-url]: https://github.com/tuhinmallick/pyMorse/stargazers
+[issues-shield]: https://img.shields.io/github/issues/tuhinmallick/pyMorse.svg?style=for-the-badge
+[issues-url]: https://github.com/tuhinmallick/pyMorse/issues
+[license-shield]: https://img.shields.io/github/license/tuhinmallick/pyMorse.svg?style=for-the-badge
+[license-url]: https://github.com/tuhinmallick/pyMorse/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/tuhinmallick
