@@ -1,6 +1,7 @@
 import os
 import smtplib  # This module is defines an SMTP client session object that can be used to send mail
-from email.message import EmailMessage, message
+from email.message import EmailMessage
+from email.message import message
 
 
 def send_message(username, password, reciever, subject, msg, mode=1):
