@@ -106,7 +106,6 @@ This is an example of how to list things you need to use the package and how to 
 
 ### Installation
 
-
 ```python
 pip install pyconfidentiality
 ```
@@ -140,10 +139,10 @@ print("Encrypted message: {}".format(cipher_text))
 
 ```python
 from pyconfidentiality import send_message
-your_email = os.environ.get('EMAIL_ID') 
-your_password = os.environ.get('EMAIL_PASSWORD') 
-receiver_email = input("Enter Reciever Email") 
-subject = input("Enter subject of the Email") 
+your_email = os.environ.get('EMAIL_ID')
+your_password = os.environ.get('EMAIL_PASSWORD')
+receiver_email = input("Enter Reciever Email")
+subject = input("Enter subject of the Email")
 
 send_message(your_email,your_password,reciever_email,subject,cipher_text)
 ```
@@ -173,7 +172,7 @@ _For more examples, please refer to the [Notebook](https://github.com/tuhinmalli
 ## Roadmap
 
 - [x] Feature 1
-- [x]  Feature 2
+- [x] Feature 2
 - [ ] Feature 3
   - [ ] Nested Feature
 
