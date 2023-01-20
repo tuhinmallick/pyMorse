@@ -106,7 +106,6 @@ This is an example of how to list things you need to use the package and how to 
 
 ### Installation
 
-
 ```python
 pip install pyconfidentiality
 ```
@@ -173,7 +172,7 @@ _For more examples, please refer to the [Notebook](https://github.com/tuhinmalli
 ## Roadmap
 
 - [x] Feature 1
-- [x]  Feature 2
+- [x] Feature 2
 - [ ] Feature 3
   - [ ] Nested Feature
 
