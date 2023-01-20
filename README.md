@@ -141,10 +141,10 @@ print("Encrypted message: {}".format(cipher_text))
 
 ```python
 from pyconfidentiality import send_message
-your_email = os.environ.get('EMAIL_ID') 
-your_password = os.environ.get('EMAIL_PASSWORD') 
-receiver_email = input("Enter Reciever Email") 
-subject = input("Enter subject of the Email") 
+your_email = os.environ.get('EMAIL_ID')
+your_password = os.environ.get('EMAIL_PASSWORD')
+receiver_email = input("Enter Reciever Email")
+subject = input("Enter subject of the Email")
 
 send_message(your_email,your_password,reciever_email,subject,cipher_text)
 ```
