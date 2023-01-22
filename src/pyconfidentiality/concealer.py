@@ -11,10 +11,7 @@ def mod_inverse(a, m):
     """
     Calculate Modular Inverse
     """
-    for x in range(1, m):
-        if (a * x) % m == 1:
-            return x
-    return -1
+    return next((x for x in range(1, m) if (a * x) % m == 1), -1)
 
 
 def isprime(n):
@@ -57,8 +54,7 @@ def generate_keypair(keysize):
     while primes:
         p = random.choice(primes)
         primes.remove(p)
-        q_values = [q for q in primes if nMin <= p * q <= nMax]
-        if q_values:
+        if q_values := [q for q in primes if nMin <= p * q <= nMax]:
             q = random.choice(q_values)
             break
     # Calculate n
